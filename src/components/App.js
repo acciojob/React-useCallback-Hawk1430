@@ -1,2 +1,15 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+import React from 'react'
+import UseCallbackComp from './UseCallbackComp.js'
+import SkillList from './SkillList'
 
+const App = () => {
+  return (
+    <div>
+      <h1 id='heading'>SKILLS</h1>
+      <UseCallbackComp/>
+      <SkillList/>
+    </div>
+  )
+}
+
+export default App
