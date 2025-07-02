@@ -13,6 +13,7 @@ const SkillList = () => {
   return (
     <>
         <h1>Skill List</h1>
+        <ul id='skill-list'>
         {list.map((skill, idx) =>(
             <div id={`skill-number-${idx}`} key={idx}>
                 <li>{skill.name}</li>
@@ -20,6 +21,8 @@ const SkillList = () => {
 
             </div>   
         ))}
+        </ul>
+        
     </>
   )
 }
