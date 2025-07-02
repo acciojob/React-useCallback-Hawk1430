@@ -16,9 +16,7 @@ const SkillList = () => {
         <ul id='skill-list'>
         {list.map((skill, idx) =>(
             <div id={`skill-number-${idx}`} key={idx}>
-                <li>{skill.name}</li>
-                <button onClick={() => handleSillDelete(skill.id)}>Delete</button>
-
+                <li onClick={() => handleSillDelete(skill.id)}>{skill.name}</li>
             </div>   
         ))}
         </ul>
